@@ -1,0 +1,139 @@
+body{
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	background-color: gray;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.payment-form{
+	background-color: white;
+	border-radius: 10px;
+	padding: 30px;
+	box-shadow: 0px 4px 8px rgba(0,0,0,1);
+	width: 400px;
+	text-align: center;
+}
+.payment-form h1{
+	font-size: 24px;
+	margin-bottom: 25px;
+}
+.card-input{
+	text-align: left;
+}
+.card-input label{
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.card-input input{
+	width: 100%;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 6px;
+}
+.exp-cvv-inputs{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+.expiration, .cvv{
+	width: calc(50% - 10px);
+}
+.expiration label, .cvv label{
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 5px;
+}
+.expiration input, .cvv input{
+width: 100%;
+padding: 10px;
+border: 1px solid black;
+border-radius: 6px;
+
+}
+
+button{
+
+	background-color: #008cff;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 16px;
+	width: 100%;
+	margin-top: 20px;
+}
+
+button:hover{
+	background-color: #0073e6
+}
+
+.payment-popup{
+	position: fixed;
+	top: 0;
+	left: 0
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 9999;
+}
+
+.popup-content{
+	background-color: white;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+	text-align: center;
+	position: relative;
+	z-index: 10000;
+
+}
+
+.checkmark {
+  width: 100px;
+  height: 100px;
+  background-color: #00cc00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10001; 
+}
+
+
+.loading-gif{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 9999;
+	display: none;
+}
+.loading-gif img{
+	width: 350px;
+	height: 350px;
+}
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 9998;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pagos</title>
+	<link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+
+<div class="payment-form">
+	
+	<h1>Pago en línea</h1>
+
+	<div class="card-input">
+		<label for="card-number">Número de tarjeta</label>
+		<input type="text" id="card-number" placeholder="Ingrese los 16 números">
+	</div>
+	<div class="exp-cvv-inputs">
+		<div class="expiration">
+			<label for="expiration">Fecha de vencimiento</label>
+			<input type="text" id="expiration" placeholder="MM/AA">
+		</div>
+		<div class="cvv">
+			<label for="cvv">CVV</label>
+			<input type="text" id="cvv" placeholder="123">
+		</div>
+	</div>
+	<button id="pay-button">Realizar Pago</button>
+</div>
+
+
+<div id="loading-gif" class="loading-gif">
+	<img src="pay.gif" alt="Loading...">	
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
